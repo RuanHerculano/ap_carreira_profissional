@@ -17,13 +17,10 @@
 		<h1>Manutenção e Evolução de Software Legado (Time UFABC)</h1>
 		<p>Ruan Herculano</p>
 	</header>
-	<section class="slide cover" id="Cover">
+
+	<!-- <section class="slide cover" id="Cover">
 		<div>
 			<img class="central" src="pictures/salic-logo.jpg" alt="Salic">
-			<!--
-				To apply styles to the certain slides
-				set slide ID to get needed elements
-				-->
 			<style>
 				#Cover h2 {
 					margin:30px 0 0;
@@ -64,7 +61,7 @@
 				}
 			</style>
 		</div>
-	</section>
+	</section> -->
 
 	<!--<section class="slide cover">-->
 		<!--<div>-->
@@ -73,10 +70,10 @@
 	<!--</section>-->
 
 	<section class="slide shout right" style="background-color:#ff9900;"><div>
-		<h2>O que é o Salic?</h2>
+		<h2>Manutenção e Evolução de Software Legado (Time UFABC)</h2>
 	</div></section>
 
-	<section class="slide"><div>
+	<!-- <section class="slide"><div>
 		<h2>Atua como um escritorio virtual no gerenciamento de projetos culturais</h2>
 		<ul>
 			<li>Criaçao de propostas</li>
@@ -85,18 +82,18 @@
 			<li>Prestaçao de contas referente aos custos do projeto</li>
 			<li>Prestaçao de contas referente a entrega do objeto</li>
 		</ul>
-	</div></section>
+	</div></section> -->
 
-	<section class="slide shout right" style="background-color:#ff9900;"><div>
+	<!-- <section class="slide shout right" style="background-color:#ff9900;"><div>
 		<h2>O que torna o Salic diferente de outros softwares publicos?</h2>
-	</div></section>
+	</div></section> -->
 
-	<section class="slide"><div>
+	<!-- <section class="slide"><div>
 		<h2>Movimentaçao Bancaria</h2>
 		<ul>
 			<li>Movimentou mais de R$1,156 bilhão em 2017 Segundo materia do jornal Estadao</li>
 		</ul>
-	</div></section>
+	</div></section> -->
 
 	<section class="slide shout right" style="background-color:#ff9900;"><div>
 		<h2>Tecnologias</h2>
@@ -115,10 +112,12 @@
 		<h2>Os nossos gargalos</h2>
 		<ul>
 			<li>Nenhuma PSR implementada no sistema</li>
-			<li>Controllers implementando regras de negocio</li>
-			<li>Codigo PHP dentro de paginas HTML (ASP)</li>
+			<li>Controllers implementando regras de negócio</li>
+			<li>Código PHP dentro de paginas HTML (ASP)</li>
+			<li>Falta de padrão para fazer uma simples requisição</li>
 			<li>Arquitetura do Frontend despadronizada</li>
-			<li>Falta de padrao para fazer uma simples requisiçao</li>
+			<li>Ambientes de homologação de produção não dockerizados</li>
+			<li>Deploy para produção e homologação demorando aproximadamente um dia</li>
 		</ul>
 	</div></section>
 
@@ -234,13 +233,74 @@
 	<section class="slide"><div>
 		<h2>...</h2>
 		<ul>
-			<li>Implementaçao das PSR's 0 e 4</li>
-			<li>Padronizaçao da arquitetura do Frontend usando Vuex</li>
-			<li>Uso do Jest para testes unitarios</li>
-			<li>Uso do Axios para fazer as requisiçoes</li>
-			<li>Remoçao de codigo PHP dentro de paginas html (ASP)</li>
+			<li>Implementação das PSR's 0 e 4</li>
+			<li>Padronização da arquitetura do Frontend usando Vuex</li>
+			<li>Uso do Jest para testes unitários</li>
+			<li>Uso do Axios para fazer as requisições</li>
+			<li>Remoção de código PHP dentro de páginas html (ASP)</li>
+			<li>Dockerização de ambientes de produção e homologação</li>
+			<li>Processo de deploy automático</li>
 		</ul>
 	</div></section>
+
+	<section class="slide cover" id="CoverVUEX">
+		<div>
+			<h1 class="titleImage">Arquitetura Vuex</h1>
+			<img class="centralVUEX" src="pictures/vuex.png" alt="VUEX">
+			<style>
+				#CoverVUEX h2 {
+					margin:30px 0 0;
+					color:#fff;
+					text-shadow: 2px 2px 2px #000;
+					text-align:center;
+					font-size:70px;
+				}
+				#CoverVUEX p {
+					margin:10px 0 0;
+					text-align:center;
+					color:#fff;
+					font-style:italic;
+					font-size:20px;
+				}
+				#CoverVUEX p a {
+					color:#fff;
+				}
+
+				#CoverVUEX .subtitle{
+					color:#fff;
+					text-shadow: 2px 2px 2px #000;
+					font-size:50px;
+					font-weight:bold;
+					line-height:120%;
+				}
+
+				#CoverVUEX {
+					background-color: white;
+					align-items: center;
+				}
+
+				.centralVUEX {
+					display: block;
+					margin-left: 20%;
+					margin-top: 5%;
+					width: 70%;
+				}
+
+				.titleImage {
+					margin-left: 1%;
+					margin-top: 1%;
+					margin-right: 95%;
+				}
+			</style>
+		</div>
+	</section>
+<!--
+	<section class="slide"><div>
+		<h2>DSL do Vue</h2>
+		<ul>
+			<li>https://unpkg.com/vue</li>
+		</ul>
+	</div></section> -->
 
 	<!--<section class="slide"><div>-->
 		<!--<h1>Nascidos nas décadas de 1960 e 1970</h1>-->
